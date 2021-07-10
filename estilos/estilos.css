@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* TIPOGRAFIAS */
+.titulos{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #294470;
+}
+.texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #294470;
+}
+.sombreado{
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
+}
+
+
+/* HEADER */
+.header{
+    font-family:'Roboto', sans-serif;
+    background-color: #294470;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.header__tituloPrincipal{
+    color: white;
+    padding-left: 10px;
+}
+.header__menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+
+/* ESTILOS INDEX */
+.sectionPrincipal1 div{
+    background-image: url('../media/reparacion1copia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+.sectionPrincipal1 div p{
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding-left: 20px;
+}
+
+.sectionPrincipal1__img{
+    width: 100%;
+}
+.sectionNosotros{
+    padding: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionNosotros__titulo{
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #294470;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #294470;
+}
+.sectionNosotros__texto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: xx-large;
+    color: #294470;
+    padding: 20px;
+    padding-top: 10px;
+}
+.sectionControles{
+    height: 400px;
+    background-color: rgb(80, 80, 187);
+    color: rgb(0, 0, 0);
+    background-image: url('../media/sectionControles.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: 'Roboto', sans serif;
+    font-size: 2rem;
+    padding: 30px;
+}
+.sectionControles h2{
+    color: black;
+}
+.sectionControles p{
+    color: black;
+}
+.sectionServicio{
+    height: 400px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans serif;
+    font-size: 2rem;
+    padding: 30px;
+}
+.sectionServicio img{
+    width: 180px;
+}
+
+/* ESTILOS FOOTER */
+.footer{
+    padding: 10px;
+    /* background-color: #294470; */
+    background: linear-gradient(to right, #294470,white);
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.footer__datos{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 50%;
+}
+.footer__datos p{
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.footer__datos ul{
+    list-style-type: none;
+}
+.footer__datos ul li{
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size:larger; 
+}
+
+/*ESTILOS CONTROLES REMOTOS */
+.sectionRemotos{
+    background-color: #f3f60f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color:black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-top: 50px;
+}
+.sectionRemotosImg{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sectionRemotosImg__tv{
+    height: 200px;
+    width: 200px;
+}
+.sectionRemotosImg__smart{
+    height: 220px;
+    width: 220px;
+}
+.sectionRemotosImg__aire{
+    height: 230px;
+    width: 150px;
+}
+.sectionRemotosImg img{
+    transform: rotateZ(0deg);
+    transition: all 1s;
+}
+.sectionRemotosImg img:hover{
+    transform: rotateZ(360deg);
+}
+.sectionRemotosTexto{
+    height: 300px;
+    display: flex;
+    border: 1px solid black; /*borde para tener nocion del espacio del div */
+}
+.sectionRemotosTexto__Beneficios{
+    width: 50%;
+    padding: 15px;
+}
+.sectionRemotosTexto__PedirControl{
+    width: 50%;
+    padding: 15px;
+}
+
+/* ESTILOS REPARACIONES */
+/* .sectionReparaciones{
+    height: 300px;
+} */
+.gridReparaciones{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 10px;
+    padding-top: 70px;
+}
+/* .gridReparaciones div{
+    background-color: rgb(147, 147, 151);
+} */
+.gridReparaciones__img{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.gridReparaciones__img img{
+    width: 600px;
+}
+.gridReparaciones__texto{
+    grid-column: 3/5;
+    grid-row: -4/-2;
+}
+.gridReparaciones__texto h3{
+    font-size: 50px;
+}
+.gridReparaciones__texto p{
+    font-size: 30px;
+}
+.gridReparaciones__paso1{
+    grid-column: -5/-4;
+    grid-row: -2/-1;
+}
+.gridReparaciones__paso1 img{
+    width: 150px;
+}
+.gridReparaciones__paso2{
+    grid-column: -4/-3;
+    grid-row: -2/-1;
+}
+.gridReparaciones__paso2 img{
+    width: 150px;
+}
+.gridReparaciones__paso3{
+    grid-column: -3/-2;
+    grid-row: -2/-1;
+}
+.gridReparaciones__paso3 img{
+    width: 150px;
+}
+.gridReparaciones__paso4{
+    grid-column: -2/-1;
+    grid-row: -2/-1;
+}
+.gridReparaciones__paso4 img{
+    width: 150px;
+}
+/* CENTRADO DE CAJAS GRID */
+.centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ESTILOS MAYORISTAS */
+.sectionMayoristas{
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    padding-top: 70px;
+}
+
+/* CONTACTO */
+.mainContacto{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
